@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The sound of the fart</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2e2d2d;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: white;
+            background-color: #2390c6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #1f85b9;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        footer a:hover {
+            color: #2390c6;
+        }
+    </style>
+</head>
+<body>
+    <h1>The sound of the fart</h1>
+    <button id="fartButton">PFFT!</button>
+    <audio id="fartAudio" src="fart-sound.mp3"></audio>
+
+    <footer>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/X_icon_2.svg/600px-X_icon_2.svg.png?20231002152819" alt="X" style="width: 20px; height: 20px;"> X
+        </a>
+        <a href="https://dexscreener.com/solana/2BhY722UXymuDE7w7TVcxdMBqpsXMsxQ3a4TCe7dpp54" target="_blank">📊 DexScanner</a>
+    </footer>
+
+    <script>
+        const button = document.getElementById('fartButton');
+        const audio = document.getElementById('fartAudio');
+
+        button.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
